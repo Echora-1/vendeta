@@ -12,6 +12,7 @@
 // 32px между 2 блоками
 
 <script>
+import http from "http"
 import MainScreen from "~/components/main/MainScreen";
 export default {
   components: {MainScreen},
@@ -26,6 +27,12 @@ export default {
       ],
     }
   },
+
+  mounted() {
+    setInterval(function () {
+      http.get('http://app-vendeta.herokuapp.com/')
+    }, 300000)
+  }
 
 }
 </script>
