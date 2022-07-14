@@ -51,7 +51,6 @@ export default {
 .reviews-card {
   display: flex;
   flex-direction: column;
-  width: 100%;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   border-radius: 24px;
   padding: 43px 33px 46px;
