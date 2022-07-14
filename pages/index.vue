@@ -52,7 +52,8 @@ export default {
 <style lang="scss" scoped>
 .wrap-main-screen,
 .wrap-property-block,
-.wrap-system-block {
+.wrap-system-block,
+.wrap-choice-block{
   z-index: 1;
   position: relative;
   overflow: visible;
@@ -98,6 +99,25 @@ export default {
 
 .wrap-system-block {
   padding-bottom: 125px;
+}
+
+.wrap-choice-block {
+  padding-bottom: 180px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 175px;
+    left: -200px;
+    width: 2452.14px;
+    height: 1583.98px;
+    background: linear-gradient(89.98deg, rgba(152, 207, 225, 0) 5.81%, #98CFE1 98.35%);
+    mix-blend-mode: normal;
+    filter: blur(150px);
+    transform: matrix(-0.99, -0.17, -0.17, 0.99, 0, 0);
+    z-index: -1;
+    pointer-events: none;
+  }
 }
 
 </style>
