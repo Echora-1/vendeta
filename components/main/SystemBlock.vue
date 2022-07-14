@@ -10,7 +10,7 @@
         {{ $t('subtitle')[1] }}
       </p>
       <ul>
-        <li v-for="(li, index) in $t('list')" :key="index" class="system-block__list-item">
+        <li v-for="(li, index) in $t('list')" :key="index" class="base-list-item">
           <span>{{ li }}</span
           >
         </li>
@@ -67,27 +67,5 @@
     padding-top: 25px;
   }
 
-  &__list-item {
-    font-size: 18px;
-    line-height: 28px;
-    color: #333333;
-    position: relative;
-    padding-left: 16px;
-
-    &:not(:last-child) {
-      margin-bottom: 22px;
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      background: #00b4db;
-      top: 11px;
-      left: 0;
-      transform: rotate(45deg);
-    }
-  }
 }
 </style>

@@ -12,6 +12,12 @@
     <div class="wrap-choice-block">
       <choice-block />
     </div>
+    <div class="wrap-privacy-block">
+      <privacy-block />
+    </div>
+    <div class="wrap-reviews-block">
+      <reviews-block />
+    </div>
   </div>
 </template>
 
@@ -26,8 +32,10 @@ import MainScreen from "~/components/main/MainScreen";
 import PropertyBlock from "~/components/main/PropertyBlock";
 import SystemBlock from "~/components/main/SystemBlock";
 import ChoiceBlock from "~/components/main/ChoiceBlock";
+import PrivacyBlock from "~/components/main/PrivacyBlock";
+import ReviewsBlock from "~/components/main/ReviewsBlock";
 export default {
-  components: {ChoiceBlock, SystemBlock, PropertyBlock, MainScreen},
+  components: {ReviewsBlock, PrivacyBlock, ChoiceBlock, SystemBlock, PropertyBlock, MainScreen},
   head() {
     return {
       title: 'Vendeta',
@@ -53,7 +61,9 @@ export default {
 .wrap-main-screen,
 .wrap-property-block,
 .wrap-system-block,
-.wrap-choice-block{
+.wrap-choice-block,
+.wrap-privacy-block,
+.wrap-reviews-block {
   z-index: 1;
   position: relative;
   overflow: visible;
@@ -120,4 +130,11 @@ export default {
   }
 }
 
+.wrap-privacy-block {
+  padding-bottom: 88px;
+}
+
+.wrap-reviews-block {
+  padding-bottom: 130px;
+}
 </style>

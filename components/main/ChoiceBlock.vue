@@ -1,12 +1,29 @@
 <template>
   <div class="container choice-block">
-    <h2 class="base-title">The best choice for you</h2>
+    <h2 class="base-title">{{ $t('title') }}</h2>
     <choice-table class="choice-block__table" />
     <base-button>
-      Get your VND key now
+      {{ $t('button') }}
     </base-button>
   </div>
 </template>
+
+<i18n>
+{
+  "en": {
+    "title": "The best choice for you",
+    "button": "Get your VND key now"
+  },
+  "ch": {
+    "title": "The best choice for you",
+    "button": "Get your VND key now"
+  },
+  "tur": {
+    "title": "The best choice for you",
+    "button": "Get your VND key now"
+  }
+}
+</i18n>
 
 <script>
 import ChoiceTable from "~/components/main/ChoiceTable";
