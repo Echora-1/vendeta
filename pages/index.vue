@@ -3,6 +3,15 @@
     <div class="wrap-main-screen">
       <main-screen />
     </div>
+    <div class="wrap-property-block">
+      <property-block />
+    </div>
+    <div class="wrap-system-block">
+      <system-block />
+    </div>
+    <div class="wrap-choice-block">
+      <choice-block />
+    </div>
   </div>
 </template>
 
@@ -14,8 +23,11 @@
 <script>
 import http from "http"
 import MainScreen from "~/components/main/MainScreen";
+import PropertyBlock from "~/components/main/PropertyBlock";
+import SystemBlock from "~/components/main/SystemBlock";
+import ChoiceBlock from "~/components/main/ChoiceBlock";
 export default {
-  components: {MainScreen},
+  components: {ChoiceBlock, SystemBlock, PropertyBlock, MainScreen},
   head() {
     return {
       title: 'Vendeta',
@@ -38,36 +50,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.wrap-main-screen,
+.wrap-property-block,
+.wrap-system-block {
+  z-index: 1;
+  position: relative;
+  overflow: visible;
+}
+
 .wrap-main-screen {
   position: relative;
-  min-height: 200vh;
-  z-index: 1;
+  padding-bottom: 81px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    right: 78px;
-    width: 1294px;
-    height: 676px;
+    right: 0;
+    width: 1445px;
+    height: 749px;
     background-image: url("../assets/img/map.svg");
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
+    pointer-events: none;
   }
 
   &::after {
     content: "";
     position: absolute;
     right: -230.14px;
-    bottom: 304.1px;
+    top: 85px;
     width: 2452.14px;
     height: 1583.98px;
     mix-blend-mode: normal;
-    filter: blur(400px);
+    filter: blur(150px);
     transform: rotate(-9.91deg);
     background: linear-gradient(89.98deg, rgba(152, 207, 225, 0) 5.81%, #98CFE1 98.35%);
     z-index: -2;
+    pointer-events: none;
   }
 }
+
+.wrap-property-block {
+  padding-bottom: 152px;
+}
+
+.wrap-system-block {
+  padding-bottom: 125px;
+}
+
 </style>
