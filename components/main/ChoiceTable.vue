@@ -284,6 +284,10 @@
     &:nth-child(2) {
       background: #ffffff;
       box-shadow: 0 8px 32px -12px rgba(0, 180, 219, 0.16);
+
+      span {
+        color: #3EC25F;
+      }
     }
 
     span {
