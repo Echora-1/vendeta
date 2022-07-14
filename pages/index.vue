@@ -81,7 +81,7 @@ export default {
     position: absolute;
     right: -230.14px;
     top: 85px;
-    width: 2452.14px;
+    width: 2452.13px;
     height: 1583.98px;
     mix-blend-mode: normal;
     filter: blur(150px);
