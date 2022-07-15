@@ -19,7 +19,9 @@ export default {
     content: {
       type: Object,
       default: () => {
+          return {
 
+          }
       }
     }
   }

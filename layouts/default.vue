@@ -4,12 +4,14 @@
     <main>
       <Nuxt />
     </main>
+    <base-footer />
   </div>
 </template>
 <script>
 import BaseHeader from '~/components/base/BaseHeader'
+import BaseFooter from "@/components/base/BaseFooter";
 export default {
-  components: { BaseHeader },
+  components: {BaseFooter, BaseHeader },
 }
 </script>
 

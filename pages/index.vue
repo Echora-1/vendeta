@@ -18,6 +18,12 @@
     <div class="wrap-reviews-block">
       <reviews-block />
     </div>
+    <div class="wrap-download-block">
+      <download-block />
+    </div>
+    <div class="wrap-secure-block">
+      <secure-block />
+    </div>
   </div>
 </template>
 
@@ -34,8 +40,12 @@ import SystemBlock from "~/components/main/SystemBlock";
 import ChoiceBlock from "~/components/main/ChoiceBlock";
 import PrivacyBlock from "~/components/main/PrivacyBlock";
 import ReviewsBlock from "~/components/main/ReviewsBlock";
+import DownloadBlock from "@/components/main/DownloadBlock";
+import SecureBlock from "@/components/main/SecureBlock";
 export default {
-  components: {ReviewsBlock, PrivacyBlock, ChoiceBlock, SystemBlock, PropertyBlock, MainScreen},
+  components: {
+    SecureBlock,
+    DownloadBlock, ReviewsBlock, PrivacyBlock, ChoiceBlock, SystemBlock, PropertyBlock, MainScreen},
   head() {
     return {
       title: 'Vendeta',
@@ -63,7 +73,9 @@ export default {
 .wrap-system-block,
 .wrap-choice-block,
 .wrap-privacy-block,
-.wrap-reviews-block {
+.wrap-reviews-block,
+.wrap-download-block,
+.wrap-secure-block {
   z-index: 1;
   position: relative;
   overflow: visible;
@@ -135,6 +147,43 @@ export default {
 }
 
 .wrap-reviews-block {
-  padding-bottom: 130px;
+  padding-bottom: 175px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2452.14px;
+    height: 1583.98px;
+    background: linear-gradient(89.98deg, rgba(152, 207, 225, 0) 5.81%, #98CFE1 98.35%);
+    mix-blend-mode: normal;
+    filter: blur(150px);
+    transform: rotate(-9.91deg);
+    right: -181.14px;
+    top: 105px;
+    z-index: -1;
+    pointer-events: none;
+  }
 }
+
+.wrap-download-block {
+  padding-bottom: 150px;
+}
+
+.wrap-secure-block {
+  padding-bottom: 145px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -433px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1445px;
+    height: 826px;
+    background-image: url("../assets/img/map2.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
 </style>
