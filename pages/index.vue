@@ -82,7 +82,6 @@ export default {
 }
 
 .wrap-main-screen {
-  position: relative;
   padding-bottom: 81px;
 
   &::before {

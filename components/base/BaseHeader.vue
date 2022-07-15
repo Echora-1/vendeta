@@ -1,7 +1,9 @@
 <template>
   <header class="container">
     <div class="base-header">
-      <icon-logo class="base-header__logo" />
+      <nuxt-link :to="localePath('/')">
+        <icon-logo class="base-header__logo" />
+      </nuxt-link>
       <ul class="base-header__nav">
         <li
           class="base-header__link"
@@ -24,13 +26,13 @@
 <i18n>
 {
   "en": {
-    "links": [ { "name": "Plans", "url": "/" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
+    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
   },
   "ch": {
-    "links": [ { "name": "Plans", "url": "/" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
+    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
   },
   "tur": {
-    "links": [ { "name": "Plans", "url": "/" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
+    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
   }
 }
 </i18n>
