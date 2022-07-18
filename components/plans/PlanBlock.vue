@@ -18,7 +18,7 @@
 <i18n>
 {
   "en": {
-    "title": "Choose your plan",
+    "title": "Order VPN",
     "pay": "Pay with",
     "subtitle": [
       "VENDETA`s nanopayments mean you are never locked into a subscription and pay only for actual use.",
@@ -30,18 +30,11 @@
         "icon": "crystal",
         "price": "1.75",
         "sum": "42"
-      },
-      {
-        "duration": "24 months",
-        "icon": "fire",
-        "price": "2.92",
-        "sum": "70",
-        "save": "20"
       }
     ]
   },
   "ch": {
-    "title": "Choose your plan",
+    "title": "Order VPN",
     "pay": "Pay with",
     "subtitle": [
       "VENDETA`s nanopayments mean you are never locked into a subscription and pay only for actual use.",
@@ -53,18 +46,11 @@
         "icon": "crystal",
         "price": "1.75",
         "sum": "42"
-      },
-      {
-        "duration": "24 months",
-        "icon": "fire",
-        "price": "2.92",
-        "sum": "70",
-        "save": "20"
       }
     ]
   },
   "tur": {
-    "title": "Choose your plan",
+    "title": "Order VPN",
     "pay": "Pay with",
     "subtitle": [
       "VENDETA`s nanopayments mean you are never locked into a subscription and pay only for actual use.",
@@ -76,13 +62,6 @@
         "icon": "crystal",
         "price": "1.75",
         "sum": "42"
-      },
-      {
-        "duration": "24 months",
-        "icon": "fire",
-        "price": "2.92",
-        "sum": "70",
-        "save": "20"
       }
     ]
   }
@@ -122,6 +101,7 @@ export default {
     max-width: 944px;
     width: 100%;
     display: flex;
+    justify-content: center;
     padding-bottom: 55px;
   }
 

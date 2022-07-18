@@ -20,13 +20,7 @@
       </div>
     </div>
     <div class="maim-screen__right">
-      <img
-        src="../../assets/img/main/main-screen-phone2x.png"
-        class="maim-screen__img"
-        width="487"
-        height="693"
-        alt="phone"
-      />
+      <vpn-app />
     </div>
   </div>
 </template>
@@ -142,7 +136,8 @@
 import BaseButton from '~/components/base/BaseButton'
 import IconAndroid from '~/components/icon/IconAndroid'
 import IconWindows from '~/components/icon/IconWindows'
+import VpnApp from "@/components/main/VpnApp";
 export default {
-  components: { IconWindows, IconAndroid, BaseButton },
+  components: {VpnApp, IconWindows, IconAndroid, BaseButton },
 }
 </script>

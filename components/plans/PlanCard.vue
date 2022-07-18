@@ -23,15 +23,15 @@
 <i18n>
 {
   "en": {
-    "btn": "Select Plan",
+    "btn": "Order",
     "save": "save "
   },
   "ch": {
-    "btn": "Select Plan",
+    "btn": "Order",
     "save": "save "
   },
   "tur": {
-    "btn": "Select Plan",
+    "btn": "Order",
     "save": "save "
   }
 }

@@ -60,7 +60,7 @@ export default {
 
   mounted() {
     setInterval(function () {
-      http.get('http://app-vendeta.herokuapp.com/')
+      http.get('https://app-vendeta.herokuapp.com/')
     }, 300000)
   }
 
@@ -82,7 +82,7 @@ export default {
 }
 
 .wrap-main-screen {
-  padding-bottom: 81px;
+  padding-bottom: 86px;
 
   &::before {
     content: "";

@@ -26,13 +26,13 @@
 <i18n>
 {
   "en": {
-    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
+    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/account" }, { "name": "Launch Pool", "url": "/" }]
   },
   "ch": {
-    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
+    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/account" }, { "name": "Launch Pool", "url": "/" }]
   },
   "tur": {
-    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/" }, { "name": "Launch Pool", "url": "/" }]
+    "links": [ { "name": "Plans", "url": "/plans" }, { "name": "Tokenomics", "url": "/account" }, { "name": "Launch Pool", "url": "/" }]
   }
 }
 </i18n>
