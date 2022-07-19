@@ -45,6 +45,11 @@
   },
   "ch": {
     "headerTitle" : "Biling",
+    "orderKey": "Order key",
+    "orderKeyPay": "pay with cryptocurrency (USDT)",
+    "orderNow": "Order now",
+    "howToPay": "How to pay?",
+    "history": "my order history",
     "table": {
       "th": ["Date/time", "Type", "Amount"],
       "td": [["18/07/2022 15:47:50", "Crypto", "25.00 USDT"], ["15/06/2021 10:25:46", "Crypto", "25.00 USDT"]]
@@ -52,6 +57,11 @@
   },
   "tur": {
     "headerTitle" : "Biling",
+    "orderKey": "Order key",
+    "orderKeyPay": "pay with cryptocurrency (USDT)",
+    "orderNow": "Order now",
+    "howToPay": "How to pay?",
+    "history": "my order history",
     "table": {
       "th": ["Date/time", "Type", "Amount"],
       "td": [["18/07/2022 15:47:50", "Crypto", "25.00 USDT"], ["15/06/2021 10:25:46", "Crypto", "25.00 USDT"]]
