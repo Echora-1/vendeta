@@ -5,7 +5,9 @@
       <p class="how-start__step-title"><span>Step 2/3:</span> Select your operating system</p>
       <div class="how-start__step-list">
         <div class="how-start__step-item">
-          <icon-logo-android width="48" height="57" />
+          <div>
+            <icon-logo-android width="48" height="57" />
+          </div>
           <span>Android</span>
         </div>
         <div class="how-start__step-item">

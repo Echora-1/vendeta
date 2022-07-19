@@ -3,9 +3,11 @@
     <div class="account-block">
       <account-tabs>
         <base-tab :title="$t('nav')[0].title">
-          <overview-block class="account-block__nav-item" />
+          <account-overview class="account-block__nav-item" />
         </base-tab>
-        <base-tab :title="$t('nav')[1].title"></base-tab>
+        <base-tab :title="$t('nav')[1].title">
+          <account-downloads class="account-block__nav-item" />
+        </base-tab>
         <base-tab :title="$t('nav')[2].title"></base-tab>
         <base-tab :title="$t('nav')[3].title"></base-tab>
         <base-tab :title="$t('nav')[4].title"></base-tab>
@@ -79,9 +81,10 @@
 <script>
 import AccountTabs from "@/components/account/AccountTabs";
 import BaseTab from "@/components/base/BaseTab";
-import OverviewBlock from "@/components/account/OverviewBlock";
+import AccountOverview from "@/components/account/AccountOverview";
+import AccountDownloads from "@/components/account/AccountDownloads";
 export default {
-  components: {OverviewBlock, BaseTab, AccountTabs}
+  components: {AccountDownloads, AccountOverview, BaseTab, AccountTabs}
 }
 </script>
 

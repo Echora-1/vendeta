@@ -1,7 +1,7 @@
 <template>
   <svg
-    width="20"
-    height="25"
+    :width="width"
+    :height="height"
     viewBox="0 0 20 25"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
@@ -12,3 +12,18 @@
     />
   </svg>
 </template>
+
+<script>
+export default {
+  props: {
+    width: {
+      type: String,
+      default: "100%"
+    },
+    height: {
+      type: String,
+      default: "100%"
+    },
+  }
+}
+</script>
