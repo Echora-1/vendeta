@@ -28,6 +28,9 @@ export default {
   cursor: pointer;
   min-height: 55px;
   text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   &--transparent {
     color: #00b4db;
