@@ -1,11 +1,15 @@
 <template>
   <table>
+    <thead>
     <tr>
       <th v-for="(item, index) in data.th" :key="index">{{ item }}</th>
     </tr>
+    </thead>
+    <tbody>
     <tr v-for="(items, index) in data.td" :key="index">
       <td v-for="(item, i) in items" :key="i">{{item}}</td>
     </tr>
+    </tbody>
   </table>
 </template>
 
@@ -43,7 +47,6 @@ tr {
 
 td, th {
   text-align: left;
-  padding: 8px 0;
 
   &:last-child {
     text-align: right;
@@ -57,6 +60,7 @@ th {
   line-height: 20px;
   color: #576280;
   opacity: 0.4;
+  padding: 0 0 13px;
 }
 
 td {
@@ -64,6 +68,7 @@ td {
   font-size: 14px;
   line-height: 20px;
   color: #576280;
+  padding: 16px 0;
 }
 
 </style>

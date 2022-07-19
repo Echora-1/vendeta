@@ -11,18 +11,18 @@
     <div class="acc-biling__main">
       <div class="acc-biling__order">
         <icon-order />
-        <p>Order key</p>
-        <span>pay with cryptocurrency (USDT)</span>
+        <p>{{ $t('orderKey') }}</p>
+        <span>{{ $t('orderKeyPay') }}</span>
         <base-button class="acc-biling__order-btn">
-          Order now
+          {{ $t('orderNow') }}
           <icon-arrow-next />
         </base-button>
         <nuxt-link :to="localePath('')">
-          How to pay?
+          {{ $t('howToPay') }}
         </nuxt-link>
       </div>
       <div class="acc-biling__history">
-        <p class="acc-biling__title">my order history</p>
+        <p class="acc-biling__title">{{ $t('history') }}</p>
         <base-table class="acc-biling__history-table" :data="$t('table')" />
       </div>
     </div>
@@ -33,6 +33,11 @@
 {
   "en": {
     "headerTitle" : "Biling",
+    "orderKey": "Order key",
+    "orderKeyPay": "pay with cryptocurrency (USDT)",
+    "orderNow": "Order now",
+    "howToPay": "How to pay?",
+    "history": "my order history",
     "table": {
       "th": ["Date/time", "Type", "Amount"],
       "td": [["18/07/2022 15:47:50", "Crypto", "25.00 USDT"], ["15/06/2021 10:25:46", "Crypto", "25.00 USDT"]]
@@ -137,7 +142,7 @@ export default {
     text-transform: uppercase;
     color: #576280;
     opacity: 0.4;
-    margin: 0;
+    margin: 0 0 18px;
   }
 
 }
