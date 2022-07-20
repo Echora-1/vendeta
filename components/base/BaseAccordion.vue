@@ -77,8 +77,7 @@ input:checked {
     padding: 0 34px;
     font-size: 16px;
     line-height: 24px;
-    color: #333333;
-    opacity: 0.6;
+    color: #33333399;
     background: #FFFFFF;
     transition: all .35s;
     position: relative;

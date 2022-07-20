@@ -14,7 +14,9 @@
         <base-tab :title="$t('nav')[3].title">
           <account-settings class="account-block__nav-item" />
         </base-tab>
-        <base-tab :title="$t('nav')[4].title"></base-tab>
+        <base-tab :title="$t('nav')[4].title">
+          <account-help class="account-block__nav-item" />
+        </base-tab>
       </account-tabs>
     </div>
   </div>
@@ -83,21 +85,30 @@
 </i18n>
 
 <script>
-import AccountTabs from "@/components/account/AccountTabs";
-import BaseTab from "@/components/base/BaseTab";
-import AccountOverview from "@/components/account/AccountOverview";
-import AccountDownloads from "@/components/account/AccountDownloads";
-import AccountBiling from "@/components/account/AccountBiling";
-import AccountSettings from "@/components/account/AccountSettings";
+import AccountTabs from '@/components/account/AccountTabs'
+import BaseTab from '@/components/base/BaseTab'
+import AccountOverview from '@/components/account/AccountOverview'
+import AccountDownloads from '@/components/account/AccountDownloads'
+import AccountBiling from '@/components/account/AccountBiling'
+import AccountSettings from '@/components/account/AccountSettings'
+import AccountHelp from '@/components/account/AccountHelp'
 export default {
-  components: {AccountSettings, AccountBiling, AccountDownloads, AccountOverview, BaseTab, AccountTabs}
+  components: {
+    AccountHelp,
+    AccountSettings,
+    AccountBiling,
+    AccountDownloads,
+    AccountOverview,
+    BaseTab,
+    AccountTabs,
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .account-block {
   min-height: 820px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 30px;
 
   &__nav-item {
