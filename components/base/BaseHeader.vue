@@ -116,6 +116,10 @@ header {
     max-width: 1280px;
     padding: 40px 20px 40px;
     margin: 0 auto;
+
+    @media (max-width: 1000px) {
+      padding: 20px 20px 40px;
+    }
   }
 
   &--scroll {
