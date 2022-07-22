@@ -1,7 +1,7 @@
 <template>
   <div class="container system-block">
     <div class="system-block__left">
-      <img src="../../assets/img/system.svg" alt="system" />
+      <img src="../../assets/img/system.svg" class="system-block__img" width="601" height="431" alt="system" />
     </div>
     <div class="system-block__right">
       <h2 class="base-title">{{ $t('title') }}</h2>
@@ -65,6 +65,13 @@
   &__right {
     padding-left: 16px;
     padding-top: 25px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    max-width: 601px;
+    max-height: 431px;
   }
 
 }

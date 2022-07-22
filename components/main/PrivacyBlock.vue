@@ -76,6 +76,10 @@
     position: relative;
     left: 35px;
     top: 12px;
+    width: 100%;
+    height: 100%;
+    max-width: 434px;
+    max-height: 427px;
   }
 }
 </style>

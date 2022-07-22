@@ -120,7 +120,8 @@ export default {
       cursor: pointer;
       background: #ececec;
       min-height: 55px;
-      min-width: 160px;
+      width: 100%;
+      max-width: 160px;
       border-radius: 36px;
       display: flex;
       align-items: center;

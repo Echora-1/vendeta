@@ -280,6 +280,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 2px;
 
     &:nth-child(2) {
       background: #ffffff;
