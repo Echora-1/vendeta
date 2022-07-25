@@ -1,7 +1,9 @@
 <template>
   <div class="container choice-block">
     <h2 class="base-title">{{ $t('title') }}</h2>
-    <choice-table class="choice-block__table" />
+    <div class="choice-block__table-wrap">
+      <choice-table class="choice-block__table" />
+    </div>
     <base-button>
       {{ $t('button') }}
     </base-button>
@@ -43,8 +45,20 @@ export default {
   flex-direction: column;
   align-items: center;
 
+  &__table-wrap {
+    margin-bottom: 36px;
+    width: 100%;
+
+    @media(max-width: 1000px) {
+      overflow-x: scroll;
+    }
+  }
+
   &__table {
-    margin-bottom: 56px;
+    padding-bottom: 20px;
+    @media(max-width: 1000px) {
+      width: 960px;
+    }
   }
 }
 </style>

@@ -96,6 +96,14 @@ export default {
     background-repeat: no-repeat;
     z-index: -1;
     pointer-events: none;
+    background-size: contain;
+
+    @media(max-width: 767px) {
+      width: 1128px;
+      height: 591px;
+      left: -137px;
+      top: -5px;
+    }
   }
 
   &::after {
@@ -116,14 +124,30 @@ export default {
 
 .wrap-property-block {
   padding-bottom: 152px;
+
+  @media(max-width: 1000px) {
+    padding-bottom: 86px;
+  }
+
+  @media(max-width: 767px) {
+    padding-bottom: 55px;
+  }
 }
 
 .wrap-system-block {
   padding-bottom: 125px;
+
+  @media(max-width: 767px) {
+    padding-bottom: 60px;
+  }
 }
 
 .wrap-choice-block {
   padding-bottom: 180px;
+
+  @media(max-width: 1000px) {
+    padding-bottom: 86px;
+  }
 
   &::before {
     content: "";

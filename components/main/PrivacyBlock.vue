@@ -57,18 +57,29 @@
 .privacy-block {
   display: flex;
 
+  @media(max-width: 767px) {
+    flex-direction: column;
+  }
+
   &__left,
   &__right {
-    flex: 0 0 50%;
-    max-width: 50%;
+    @media(min-width: 768px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
   }
 
   &__left {
-    padding-right: 16px;
+    @media(min-width: 768px) {
+      padding-right: 16px;
+
+    }
   }
 
   &__right {
-    padding-left: 16px;
+    @media(min-width: 768px) {
+      padding-left: 16px;
+    }
   }
 
   &__image {
@@ -80,6 +91,10 @@
     height: 100%;
     max-width: 434px;
     max-height: 427px;
+
+    @media(max-width: 1000px) {
+      left: 0;
+    }
   }
 }
 </style>

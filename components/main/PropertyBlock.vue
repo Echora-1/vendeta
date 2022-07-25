@@ -77,12 +77,25 @@ export default {
 .property-block {
   display: flex;
 
+  @media(max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__card {
     max-width: calc((1240px - 64px) / 3);
     width: 100%;
 
-    &:not(:first-child) {
-      margin-left: 32px;
+    @media(min-width: 768px) {
+      &:not(:first-child) {
+        margin-left: 32px;
+      }
+    }
+
+    @media(max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
     }
   }
 }

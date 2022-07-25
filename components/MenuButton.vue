@@ -19,7 +19,7 @@ export default {
 <style lang='scss' scoped>
 button {
   width: 32px;
-  height: 28px;
+  height: 26px;
   background: transparent;
   border: none;
   position: relative;

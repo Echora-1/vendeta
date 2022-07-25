@@ -46,6 +46,11 @@ export default {
     line-height: 29px;
     color: #00B4DB;
     margin: 22px 0 18px;
+    text-align: center;
+
+    @media (min-width: 768px) and (max-width: 1000px) {
+      min-height: 58px;
+    }
   }
 
   &__text {

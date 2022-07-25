@@ -79,35 +79,75 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  @media(max-width: 767px) {
+    padding: 0;
+  }
+}
+
 
 .base-title {
   margin-bottom: 16px;
+
+  @media(max-width: 1000px) {
+    margin-top: 0;
+  }
+
+  @media(max-width: 767px) {
+    text-align: center;
+  }
+
 }
 
 .base-subtitle {
   max-width: 394px;
+
+  @media(max-width: 767px) {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
 }
 
 .download-block {
   &__wrap {
     background: #FFFFFF;
-    border-radius: 36px;
     padding: 90px 74px;
     display: flex;
+
+    @media(max-width: 1000px) {
+      padding: 60px 35px;
+    }
+
+    @media(min-width: 768px) {
+      border-radius: 36px;
+    }
+
+    @media(max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 16px;
+    }
   }
 
 
   &__right {
-    flex: 0 0 52%;
-    max-width: 52%;
+    @media(min-width: 1001px) {
+      flex: 0 0 52%;
+      max-width: 52%;
+    }
   }
 
   &__left {
-    flex: 0 0 48%;
-    max-width: 48%;
-    padding-right: 16px;
-    padding-top: 20px;
-  }
+    @media(min-width: 1001px) {
+      flex: 0 0 48%;
+      max-width: 48%;
+    }
 
+    @media(min-width: 768px) {
+      padding-right: 16px;
+      padding-top: 20px;
+    }
+  }
 }
 </style>
