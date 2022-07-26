@@ -17,7 +17,7 @@
           >
           <div class="base-header__actions">
             <span class="base-header__language">EN</span>
-            <nuxt-link :to="localePath('/')">
+            <nuxt-link :to="localePath('/sign-up')">
               <base-button class="base-header__sign-up" transparent>
                 Sign Up
               </base-button>
