@@ -27,25 +27,30 @@
   </div>
 </template>
 
-// 104.66 px на одну полоску
-// 628px на 6
-// 1256px на 12
-// 32px между 2 блоками
+// 104.66 px на одну полоску // 628px на 6 // 1256px на 12 // 32px между 2
+блоками
 
 <script>
-import http from "http"
-import MainScreen from "~/components/main/MainScreen";
-import PropertyBlock from "~/components/main/PropertyBlock";
-import SystemBlock from "~/components/main/SystemBlock";
-import ChoiceBlock from "~/components/main/ChoiceBlock";
-import PrivacyBlock from "~/components/main/PrivacyBlock";
-import ReviewsBlock from "~/components/main/ReviewsBlock";
-import DownloadBlock from "@/components/main/DownloadBlock";
-import SecureBlock from "@/components/main/SecureBlock";
+import http from 'http'
+import MainScreen from '~/components/main/MainScreen'
+import PropertyBlock from '~/components/main/PropertyBlock'
+import SystemBlock from '~/components/main/SystemBlock'
+import ChoiceBlock from '~/components/main/ChoiceBlock'
+import PrivacyBlock from '~/components/main/PrivacyBlock'
+import ReviewsBlock from '~/components/main/ReviewsBlock'
+import DownloadBlock from '@/components/main/DownloadBlock'
+import SecureBlock from '@/components/main/SecureBlock'
 export default {
   components: {
     SecureBlock,
-    DownloadBlock, ReviewsBlock, PrivacyBlock, ChoiceBlock, SystemBlock, PropertyBlock, MainScreen},
+    DownloadBlock,
+    ReviewsBlock,
+    PrivacyBlock,
+    ChoiceBlock,
+    SystemBlock,
+    PropertyBlock,
+    MainScreen,
+  },
   head() {
     return {
       title: 'Vendeta',
@@ -62,8 +67,7 @@ export default {
     setInterval(function () {
       http.get('https://app-vendeta.herokuapp.com/')
     }, 300000)
-  }
-
+  },
 }
 </script>
 
@@ -85,20 +89,20 @@ export default {
   padding-bottom: 86px;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
     width: 1445px;
     height: 749px;
-    background-image: url("../assets/img/map.svg");
+    background-image: url('../assets/img/map.svg');
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
     pointer-events: none;
     background-size: contain;
 
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
       width: 1128px;
       height: 591px;
       left: -137px;
@@ -107,7 +111,7 @@ export default {
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     right: -230.14px;
     top: 85px;
@@ -116,7 +120,11 @@ export default {
     mix-blend-mode: normal;
     filter: blur(150px);
     transform: rotate(-9.91deg);
-    background: linear-gradient(89.98deg, rgba(152, 207, 225, 0) 5.81%, #98CFE1 98.35%);
+    background: linear-gradient(
+      89.98deg,
+      rgba(152, 207, 225, 0) 5.81%,
+      #98cfe1 98.35%
+    );
     z-index: -2;
     pointer-events: none;
   }
@@ -125,11 +133,11 @@ export default {
 .wrap-property-block {
   padding-bottom: 152px;
 
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     padding-bottom: 86px;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     padding-bottom: 55px;
   }
 }
@@ -137,7 +145,7 @@ export default {
 .wrap-system-block {
   padding-bottom: 125px;
 
-  @media(max-width: 767px) {
+  @media (max-width: 767px) {
     padding-bottom: 60px;
   }
 }
@@ -145,18 +153,22 @@ export default {
 .wrap-choice-block {
   padding-bottom: 180px;
 
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     padding-bottom: 86px;
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 175px;
     left: -200px;
     width: 2452.14px;
     height: 1583.98px;
-    background: linear-gradient(89.98deg, rgba(152, 207, 225, 0) 5.81%, #98CFE1 98.35%);
+    background: linear-gradient(
+      89.98deg,
+      rgba(152, 207, 225, 0) 5.81%,
+      #98cfe1 98.35%
+    );
     mix-blend-mode: normal;
     filter: blur(150px);
     transform: matrix(-0.99, -0.17, -0.17, 0.99, 0, 0);
@@ -172,11 +184,15 @@ export default {
 .wrap-reviews-block {
   padding-bottom: 175px;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 2452.14px;
     height: 1583.98px;
-    background: linear-gradient(89.98deg, rgba(152, 207, 225, 0) 5.81%, #98CFE1 98.35%);
+    background: linear-gradient(
+      89.98deg,
+      rgba(152, 207, 225, 0) 5.81%,
+      #98cfe1 98.35%
+    );
     mix-blend-mode: normal;
     filter: blur(150px);
     transform: rotate(-9.91deg);
@@ -189,24 +205,38 @@ export default {
 
 .wrap-download-block {
   padding-bottom: 150px;
+
+  @media (max-width: 767px) {
+    padding-bottom: 120px;
+  }
 }
 
 .wrap-secure-block {
   padding-bottom: 145px;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -433px;
     left: 50%;
     transform: translateX(-50%);
     width: 1445px;
     height: 826px;
-    background-image: url("../assets/img/map2.svg");
+    background-image: url('../assets/img/map2.svg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     z-index: -1;
     pointer-events: none;
   }
-}
 
+  @media (max-width: 767px) {
+    padding-bottom: 120px;
+
+    &::before {
+      width: 809px;
+      height: 423px;
+      top: -267px;
+    }
+  }
+}
 </style>

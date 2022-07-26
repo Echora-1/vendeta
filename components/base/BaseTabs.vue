@@ -132,6 +132,10 @@ export default {
     span {
       display: inline-flex;
       align-items: center;
+
+      @media(max-width: 767px) {
+        display: none;
+      }
     }
 
     svg {

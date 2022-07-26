@@ -59,6 +59,7 @@
 
   @media(max-width: 767px) {
     flex-direction: column;
+    max-width: 425px;
   }
 
   &__left,

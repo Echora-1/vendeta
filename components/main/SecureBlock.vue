@@ -38,15 +38,27 @@ export default {
 <style lang="scss" scoped>
 .base-title {
   margin-bottom: 0;
+
+  @media(max-width: 767px) {
+    max-width: 300px;
+    text-align: center;
+  }
 }
 
 .base-subtitle {
   margin-bottom: 26px;
+
+  @media(max-width: 767px) {
+    max-width: 260px;
+    text-align: center;
+  }
 }
 
 .secure-block {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
 }
 </style>

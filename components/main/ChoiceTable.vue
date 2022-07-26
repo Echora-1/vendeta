@@ -246,7 +246,6 @@
 <style lang="scss" scoped>
 .choice-table {
   background: transparent;
-  width: 100%;
   display: flex;
 
   &__item {

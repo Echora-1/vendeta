@@ -173,12 +173,20 @@ export default {
 
   &__main {
     display: flex;
+
+    @media(max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__nav {
     max-width: 920px;
     width: 100%;
-    padding-bottom: 55px;
+
+    @media(min-width: 768px) {
+      padding-bottom: 55px;
+    }
 
     ul {
       display: flex;
@@ -199,10 +207,11 @@ export default {
       @media (max-width: 767px) {
         margin-bottom: 40px;
 
-        &:nth-last-child(-n + 3) {
-          display: none;
+        &:nth-child(3n) {
+          margin-bottom: 60px;
         }
       }
+
       @media (min-width: 768px) {
         margin-bottom: 30px;
       }
@@ -222,9 +231,23 @@ export default {
   }
 
   &__social {
-    padding-left: 30px;
+    @media(min-width: 768px) {
+      padding-left: 30px;
+    }
+
+    @media(max-width: 767px) {
+      padding-bottom: 35px;
+    }
+
     ul {
       margin: 0;
+
+      @media(max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
     }
 
     li:not(:last-child) {
@@ -244,12 +267,20 @@ export default {
     width: 20px;
     height: 20px;
     margin-right: 6px;
+
+    @media(max-width: 767px) {
+      margin-bottom: 1px;
+    }
   }
 
   &__copyright {
     display: flex;
     justify-content: center;
     padding-bottom: 22px;
+
+    @media(max-width: 767px) {
+      padding-bottom: 60px;
+    }
 
     p {
       font-size: 14px;

@@ -79,6 +79,8 @@ export default {
     }
 
     &--mb {
+      display: none;
+
       @media(max-width: 767px) {
         display: block;
         order: 2;
