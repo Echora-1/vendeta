@@ -38,6 +38,12 @@ export default {
 <style lang="scss" scoped>
 .base-title {
   margin-bottom: 78px;
+
+  @media(max-width: 767px) {
+    text-align: center;
+    max-width: 238px;
+  }
+
 }
 
 .choice-block {

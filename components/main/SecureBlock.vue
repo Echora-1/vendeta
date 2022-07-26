@@ -40,7 +40,7 @@ export default {
   margin-bottom: 0;
 
   @media(max-width: 767px) {
-    max-width: 300px;
+    max-width: 290px;
     text-align: center;
   }
 }

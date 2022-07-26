@@ -139,7 +139,9 @@ export default {
     }
 
     svg {
-      margin-right: 9px;
+      @media(min-width: 768px) {
+        margin-right: 9px;
+      }
     }
   }
 }
