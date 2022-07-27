@@ -1,5 +1,5 @@
 <template>
-  <div class="vpn-app">
+  <div :class="['vpn-app', { 'vpn-app--animatiom': animation }]">
     <div class="vpn-app__stat">
       <p class="vpn-app__stat-title">Statistics</p>
       <icon-stat class="vpn-app__stat-icon" />
@@ -18,9 +18,9 @@
       <p class="vpn-app__status">VPN Disabled</p>
       <p class="vpn-app__work-timer">00 : 00 : 00</p>
       <div class="vpn-app__toggle-wrap">
-          <div class="vpn-app__toggle">
-            <icon-toggle />
-          </div>
+        <div class="vpn-app__toggle">
+          <icon-toggle />
+        </div>
       </div>
       <div class="vpn-app__speed">
         <div class="vpn-app__speed-item">
@@ -41,7 +41,7 @@
           <icon-setting />
         </div>
         <div class="vpn-app__btn vpn-app__btn--active">
-          <icon-vendeta/>
+          <icon-vendeta />
         </div>
         <div class="vpn-app__btn">
           <icon-graph />
@@ -52,13 +52,25 @@
 </template>
 
 <script>
-import IconToggle from "@/components/icon/IconToggle";
-import IconSetting from "@/components/icon/IconSetting";
-import IconVendeta from "@/components/icon/IconVendeta";
-import IconGraph from "@/components/icon/IconGraph";
-import IconStat from "@/components/icon/IconStat";
+import IconToggle from '@/components/icon/IconToggle'
+import IconSetting from '@/components/icon/IconSetting'
+import IconVendeta from '@/components/icon/IconVendeta'
+import IconGraph from '@/components/icon/IconGraph'
+import IconStat from '@/components/icon/IconStat'
 export default {
-  components: {IconStat, IconGraph, IconVendeta, IconSetting, IconToggle}
+  components: { IconStat, IconGraph, IconVendeta, IconSetting, IconToggle },
+
+  data() {
+    return {
+      animation: false,
+    }
+  },
+
+  mounted() {
+    document.addEventListener('DOMContentLoaded',  () => {
+      this.animation = true
+    })
+  },
 }
 </script>
 
@@ -66,10 +78,25 @@ export default {
 .vpn-app {
   position: relative;
 
+  &--animatiom {
+    .vpn-app__toggle-wrap {
+      background: #00b4db;
+    }
+
+    .vpn-app__toggle {
+      transform: translate(48px, -50%);
+      color: #00b4db;
+    }
+  }
+
   &__app {
     width: 320px;
     min-height: 693px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     border-radius: 36px;
     display: flex;
     flex-direction: column;
@@ -100,12 +127,12 @@ export default {
     margin-bottom: 75px;
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background: #DB0000;
+      background: #db0000;
       left: -2px;
       top: 50%;
       transform: translateY(-50%);
@@ -113,19 +140,19 @@ export default {
   }
 
   &__toggle-wrap {
-    background: #A1C7D2;
+    background: #a1c7d2;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
     width: 124px;
     height: 48px;
     position: relative;
     margin-bottom: 79px;
-
+    transition: all 0.3s;
   }
 
   &__toggle {
     position: absolute;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
     width: 76px;
     height: 76px;
@@ -133,10 +160,11 @@ export default {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #A1C7D2;
+    color: #a1c7d2;
     top: 50%;
     left: 0;
-    transform: translate(0, -50%); // transform: translate(48px, -50%);
+    transform: translate(0, -50%);
+    transition: all 0.3s;
   }
 
   &__speed {
@@ -215,7 +243,7 @@ export default {
     justify-content: center;
 
     &--active {
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 12px;
     }
@@ -223,7 +251,7 @@ export default {
 
   &__stat {
     position: absolute;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 36px;
     width: 308px;
     min-height: 256px;
@@ -279,4 +307,3 @@ export default {
   }
 }
 </style>
-
