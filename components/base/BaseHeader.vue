@@ -84,13 +84,10 @@ export default {
 
     scrollHeader() {
       const header = document.querySelector('.base-header')
-      const headerWrap = document.querySelector('.base-header__wrap')
       if (window.scrollY >= 100) {
         header.classList.add('base-header--scroll')
-        headerWrap.classList.add('base-header__wrap--scroll')
       } else {
         header.classList.remove('base-header--scroll')
-        headerWrap.classList.remove('base-header__wrap--scroll')
       }
     },
   },

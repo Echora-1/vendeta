@@ -63,6 +63,7 @@ export default {
   &__main {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   &__key-overview {
@@ -71,7 +72,7 @@ export default {
 
   &__how-to-start {
     max-width: 668px;
-    margin-left: 66px;
+    margin-left: 10px;
   }
 }
 

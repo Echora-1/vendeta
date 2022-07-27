@@ -2,7 +2,8 @@
   <div class="wrap-reset-pass">
     <div class="container reset-pass">
       <wrap-form class="reset-pass__form">
-        <reset-password @submitForm="(email) => resetPass(email)" />
+        <reset-password v-if="!passwordResetSent" @submitForm="(email) => resetPass(email)" />
+        <check-inbox v-else :email="emailReset" />
       </wrap-form>
     </div>
   </div>
@@ -14,9 +15,17 @@ import ResetPassword from '~/components/forms/ResetPassword'
 export default {
   components: { WrapForm, ResetPassword },
 
+  data() {
+    return {
+      passwordResetSent: false,
+      emailReset: "",
+    }
+  },
+
   methods: {
-    resetPass: (email) => {
-      console.log(email)
+    resetPass: function resetPass(email) {
+      this.passwordResetSent = true
+      this.emailReset = email
     }
   }
 }

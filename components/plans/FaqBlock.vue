@@ -138,7 +138,8 @@ export default {
   align-items: center;
 
   &__list {
-    width: 816px;
+    max-width: 816px;
+    width: 100%;
   }
 
   &__item {

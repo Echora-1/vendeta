@@ -99,6 +99,7 @@ export default {
     width: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
   }
 
   &__order {
@@ -110,6 +111,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 20px;
 
     p {
       font-weight: 500;
@@ -141,8 +143,8 @@ export default {
   }
 
   &__history {
-    margin-left: 80px;
     width: 100%;
+    max-width: 510px;
   }
 
   &__title {

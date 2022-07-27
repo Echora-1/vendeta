@@ -4,7 +4,7 @@
     <p class="form-subtitle">
       Enter your email address, and we’ll send you a link to reset your password.
     </p>
-    <form class="reset-pass-form__form" @submit.prevent="">
+    <form class="reset-pass-form__form">
       <base-input
         v-model="email"
         name="email"
@@ -14,10 +14,10 @@
         required-field
         @input="emailInvalid = false"
       />
-      <base-button class="reset-pass-form__btn" @click.native="$emit('submitForm', email)">
-        Send
-      </base-button>
     </form>
+    <base-button class="reset-pass-form__btn" @click.native="submit">
+      Send
+    </base-button>
     <nuxt-link :to="localePath('/log-in')" class="reset-pass-form__link">
       Back to log in
     </nuxt-link>
@@ -38,7 +38,7 @@ export default {
   },
 
   methods: {
-    submit: () => {
+    submit: function submit() {
       this.$emit('submitForm', this.email)
     },
   },
@@ -63,12 +63,8 @@ export default {
 
   &__btn {
     min-width: 320px;
-  }
-
-  &__form {
     margin-bottom: 27px;
   }
-
 
   &__link {
     font-size: 14px;

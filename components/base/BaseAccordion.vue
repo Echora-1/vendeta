@@ -64,6 +64,10 @@ input:checked {
     position: relative;
     transition: color 0.3s;
 
+    @media(max-width: 767px) {
+      font-size: 16px;
+    }
+
     svg {
       position: absolute;
       top: 50%;

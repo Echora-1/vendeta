@@ -134,6 +134,10 @@ export default {
 
       &:not(:last-child) {
         margin-right: 40px;
+
+        @media(max-width: 767px) {
+          margin-right: 30px;
+        }
       }
     }
   }

@@ -40,6 +40,11 @@ export default {
 .wrap-plan-block {
   padding-top: 175px;
   padding-bottom: 46px;
+
+  @media(max-width: 1000px) {
+    padding-top: 115px;
+  }
+
   &::before {
     content: "";
     position: absolute;
